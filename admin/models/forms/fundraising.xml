@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="details">
+        <field
+            name="id"
+            type="hidden"
+        />
+        <field
+            name="title"
+            type="text"
+            label="COM_FUNDRAISING_FUNDRAISING_FIELD_TITLE_LABEL"
+            description="COM_FUNDRAISING_FUNDRAISING_FIELD_TITLE_DESC"
+            size="40"
+            class="input-xlarge validate-title"
+            required="true"
+            default=""
+            labelclass="control-label"
+        />
+        <field
+            name="current_amount"
+            type="text"
+            label="COM_FUNDRAISING_FUNDRAISING_FIELD_CURRENT_AMOUNT_LABEL"
+            description="COM_FUNDRAISING_FUNDRAISING_FIELD_CURRENT_AMOUNT_DESC"
+            size="40"
+            class="input-xlarge validate-title"
+            required="true"
+            default=""
+            labelclass="control-label"
+        />
+        <field
+            name="final_amount"
+            type="text"
+            label="COM_FUNDRAISING_FUNDRAISING_FIELD_FINAL_AMOUNT_LABEL"
+            description="COM_FUNDRAISING_FUNDRAISING_FIELD_FINAL_AMOUNT_DESC"
+            size="40"
+            class="input-xlarge validate-title"
+            required="true"
+            default=""
+            labelclass="control-label"
+        />
+        <field
+            name="finished"
+            type="text"
+            label="COM_FUNDRAISING_FUNDRAISING_FIELD_FINISHED_LABEL"
+            description="COM_FUNDRAISING_FUNDRAISING_FIELD_FINISHED_DESC"
+            size="40"
+            class="input-xlarge validate-title"
+            required="true"
+            default=""
+            labelclass="control-label"
+        />
+        <field
+            name="link_article"
+            type="sql"
+            label="COM_FUNDRAISING_FUNDRAISING_FIELD_LINK_ARTICLE_LABEL"
+            description="COM_FUNDRAISING_FUNDRAISING_FIELD_LINK_ARTICLE_DESC"
+            size="40"
+            class="input-xlarge validate-title"
+            query="SELECT id, title FROM #__content"
+            key_field="id"
+            value_field="title"
+            required="true"
+            default=""
+            labelclass="control-label"
+        />
+    </fieldset>
+</form>
